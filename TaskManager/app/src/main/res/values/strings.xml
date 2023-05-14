@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+
+    <string-array name="categories_array">
+        <item>Tareas</item>
+        <item>Proyectos</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string name="notes_hint">Notas</string>
+
+</resources>

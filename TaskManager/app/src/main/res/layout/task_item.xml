@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="339dp"
+        android:layout_height="275dp">
+
+        <EditText
+            android:id="@+id/notesEditText"
+            android:layout_width="324dp"
+            android:layout_height="41dp"
+            android:hint="@string/notes_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.195"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/task_description_textview"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Descripción de la tarea"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.358"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/task_due_date_textview"
+            android:layout_width="118dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="4dp"
+            android:text="Fecha límite"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/task_checkbox"
+            android:layout_width="68dp"
+            android:layout_height="61dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.619"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976" />
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="150dp"
+            android:layout_height="29dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toStartOf="@+id/task_due_date_textview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.016" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
